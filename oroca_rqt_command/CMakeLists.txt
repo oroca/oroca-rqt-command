@@ -28,7 +28,7 @@ install(DIRECTORY
 )
 
 install(PROGRAMS
-  scripts/rqt_example
+  scripts/rqt_command
   DESTINATION lib/${PROJECT_NAME}
 )
 

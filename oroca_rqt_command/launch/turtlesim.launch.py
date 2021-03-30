@@ -23,15 +23,15 @@ def generate_launch_description():
         LogInfo(msg=['Execute the rqt_command with turtlesim node.']),
 
         Node(
-            namespace='turtle1',
+            node_namespace='turtle1',
             package='oroca_rqt_command',
-            executable='rqt_example',
+            node_executable='rqt_command',
             name='rqt_command',
             output='screen'),
 
         Node(
             package='turtlesim',
-            executable='turtlesim_node',
+            node_executable='turtlesim_node',
             name='turtlesim',
             output='screen')
     ])

@@ -1,5 +1,5 @@
 <library path="src">
-  <class name="Examples" type="oroca_rqt_command.examples.Examples" base_class_type="rqt_gui_py::Plugin">
+  <class name="Command" type="oroca_rqt_command.rqt_command.Command" base_class_type="rqt_gui_py::Plugin">
     <description>
       A plugin visualizing messages and services values
     </description>

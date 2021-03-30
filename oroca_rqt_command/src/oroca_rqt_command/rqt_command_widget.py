@@ -28,11 +28,11 @@ from rclpy.qos import QoSProfile
 from std_srvs.srv import SetBool
 
 
-class ExamplesWidget(QWidget):
+class CommandWidget(QWidget):
 
     def __init__(self, node):
-        super(ExamplesWidget, self).__init__()
-        self.setObjectName('ExamplesWidget')
+        super(CommandWidget, self).__init__()
+        self.setObjectName('CommandWidget')
 
         self.node = node
 
@@ -42,7 +42,7 @@ class ExamplesWidget(QWidget):
         self.CMD_VEL_YAW_FACTOR = -10.0
 
         pkg_name = 'oroca_rqt_command'
-        ui_filename = 'rqt_example.ui'
+        ui_filename = 'rqt_command.ui'
         topic_name = 'cmd_vel'
         service_name = 'led_control'
 

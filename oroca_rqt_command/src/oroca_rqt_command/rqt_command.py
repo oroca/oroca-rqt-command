@@ -13,17 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from oroca_rqt_command.examples_widget import ExamplesWidget
+from oroca_rqt_command.rqt_command_widget import CommandWidget
 
 from rqt_gui_py.plugin import Plugin
 
 
-class Examples(Plugin):
+class Command(Plugin):
 
     def __init__(self, context):
-        super(Examples, self).__init__(context)
+        super(Command, self).__init__(context)
         self.setObjectName('OROCA RQt Command')
-        self.widget = ExamplesWidget(context.node)
+        self.widget = CommandWidget(context.node)
         serial_number = context.serial_number()
         if serial_number > 1:
             self.widget.setWindowTitle(self.widget.windowTitle() + ' ({0})'.format(serial_number))
