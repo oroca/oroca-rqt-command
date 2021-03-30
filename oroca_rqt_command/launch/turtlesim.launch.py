@@ -25,7 +25,7 @@ def generate_launch_description():
         Node(
             namespace='turtle1',
             package='oroca_rqt_command',
-            executable='rqt_example',
+            executable='rqt_command',
             name='rqt_command',
             output='screen'),
 

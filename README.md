@@ -22,7 +22,7 @@ $ cd ~/robot_ws && colcon build --symlink-install
 
 ## Run oroca_rqt_command package
 ```
-$ ros2 run oroca_rqt_command rqt_example
+$ ros2 run oroca_rqt_command rqt_command
 ```
 
 ## Run oroca_rqt_command package with turtlesim_node

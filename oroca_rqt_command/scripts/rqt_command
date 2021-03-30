@@ -17,8 +17,8 @@ import sys
 
 from rqt_gui.main import Main
 
-from oroca_rqt_command.examples import Examples
+from oroca_rqt_command.rqt_command import Command
 
-plugin = 'oroca_rqt_command.examples.Examples'
+plugin = 'oroca_rqt_command.rqt_command.Command'
 main = Main(filename=plugin)
 sys.exit(main.main(standalone=plugin))
